@@ -1,0 +1,14 @@
+@import '../Helpers/variables';
+
+.text-1{
+    @include text($fz:$text-2xl, $fw:$text-regular, $c:$text-c1-ponk);
+    display: inline-block;
+};
+.text-2{
+    @include text($fz:$text-6xl, $fw:$text-bold, $c:$text-c1-darkk);
+    display: inline-block;
+}
+
+.img-start{
+    width: 100%;
+}

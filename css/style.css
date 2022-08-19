@@ -1,0 +1,170 @@
+button {
+  background-color: #b61984;
+  padding: 0.7em 1.2em;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+button i {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+button span {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+button::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 30px;
+  border: 1px solid #b61984;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+}
+
+button:hover i {
+  color: #b61984;
+}
+
+button:hover span {
+  color: #b61984;
+}
+
+button:hover::before,
+button:focus::before {
+  transform: scale(1);
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.yellow_top {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 765px) {
+  header .fa-brands {
+    display: none;
+  }
+}
+
+.fa-brands {
+  transition: all 0.5s;
+}
+.fa-brands:hover {
+  color: #b61984;
+}
+
+footer {
+  background: no-repeat center url("../img/footer_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.text-1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #b61984;
+  display: inline-block;
+}
+
+.text-2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #b61984;
+  font-size: 60px;
+  color: #000;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.img-start {
+  width: 100%;
+}
+
+.row__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 765px) {
+  .row__card {
+    grid-template-columns: 1fr;
+  }
+}
+
+section.card {
+  position: relative;
+  z-index: -2;
+}
+
+.card-title {
+  color: #b61984;
+}
+
+section#home {
+  position: relative;
+  z-index: 100;
+}
+
+.violet_bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: -60px;
+  left: 0;
+}
+@media only screen and (max-width: 765px) {
+  .violet_bottom {
+    bottom: -52px;
+  }
+}
+
+.wave-white {
+  position: absolute;
+  z-index: -1;
+  bottom: -1px;
+  left: 0;
+}
+@media only screen and (max-width: 765px) {
+  .wave-white {
+    bottom: -2px;
+  }
+}
+
+section.contact {
+  position: relative;
+  z-index: -2;
+}
+
+.accent_bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: -48px;
+  left: 0;
+}
+@media only screen and (max-width: 765px) {
+  .accent_bottom {
+    bottom: -48px;
+  }
+}

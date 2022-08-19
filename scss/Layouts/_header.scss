@@ -1,0 +1,26 @@
+@import '../Helpers/variables';
+
+header{
+    position: relative;
+    z-index: 2;
+}
+.yellow_top{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+header{
+    .fa-brands{
+        @media only screen and (max-width: 765px) {
+           display: none;
+      }
+    }
+
+}
+.fa-brands{
+    transition: all 0.5s;
+    &:hover{
+        color: $text-c1-ponk;
+    }
+}

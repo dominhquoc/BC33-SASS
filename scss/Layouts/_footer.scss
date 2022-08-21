@@ -4,5 +4,11 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
+    height: 60vh;
+}
+
+hr{
+    margin: 10px 0;
+    width: 60px;
+    color: $text-c1-dark;
 }

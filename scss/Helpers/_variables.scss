@@ -23,3 +23,12 @@ $text-bold: 700;
     font-weight: $fw;
     color: $c;
 }
+
+@mixin fa($cc, $ca) {
+
+    color: $cc;
+    &:hover{
+        color:$ca;
+    }
+    
+}

@@ -20,6 +20,16 @@ section.card{
 
 @import '../Helpers/variables';
 
+
+.col{
+
+    @for $i from 0 to 8 {
+        .item-#{$i + 1}{
+          animation: CardBienHinh (0.5s * $i+1) linear};
+    }
+
+}
+
 .card-title{
     color: $text-c1-ponk;
 }
@@ -37,4 +47,18 @@ section#home{
     @media only screen and (max-width: 765px) {
        bottom: -52px;
   }
+}
+
+@keyframes CardBienHinh {
+    0%{
+        opacity: -1;
+        
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        
+        opacity: 1;
+    }
 }
